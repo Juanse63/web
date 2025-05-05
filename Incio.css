@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: sans-serif;
+  }
+  body, html {
+    height: 100%;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #FF8C42; /* naranja */
+    width: 240px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .logo img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .nav {
+    flex-grow: 1;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    gap: 10px;
+    opacity: 0.8;
+    transition: opacity .2s;
+  }
+  .nav-item.active,
+  .nav-item:hover {
+    opacity: 1;
+  }
+  .logout {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    gap: 10px;
+    margin-top: 40px;
+  }
+  
+  /* Main area */
+  .main {
+    flex-grow: 1;
+    background-color: #E8F1FA; /* celeste claro */
+    padding: 20px;
+  }
+  .main header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Card */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .card h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  .records {
+    display: flex;
+    gap: 20px;
+  }
+  .records table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .records th, .records td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  .records thead {
+    background-color: #FDECEC; /* rosa suave */
+  }
+  
